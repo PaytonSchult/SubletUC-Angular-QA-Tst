@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "ToUHXEh/3iXeCvshVPzFpG9QU2SOkAPmuBXTSSYWjfY=",
+  "Source": "SubletUC.Server",
+  "BasePath": "_content/SubletUC.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\local Source\\SubletUC\\SubletUC\\SubletUC.client\\SubletUC.client.esproj",
+      "Version": 2,
+      "Source": "SubletUC.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

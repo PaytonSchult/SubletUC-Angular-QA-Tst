@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubletUC.Core", "SubletUC.Core\SubletUC.Core.csproj", "{00A94A56-00EB-8E13-0387-68480AF25BC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubletUC.Server", "SubletUC.Server\SubletUC.Server.csproj", "{A3332DC4-CFC3-A8DC-D4CE-D6A2155D7CF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00A94A56-00EB-8E13-0387-68480AF25BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A94A56-00EB-8E13-0387-68480AF25BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A94A56-00EB-8E13-0387-68480AF25BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A94A56-00EB-8E13-0387-68480AF25BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3332DC4-CFC3-A8DC-D4CE-D6A2155D7CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3332DC4-CFC3-A8DC-D4CE-D6A2155D7CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3332DC4-CFC3-A8DC-D4CE-D6A2155D7CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3332DC4-CFC3-A8DC-D4CE-D6A2155D7CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {892C50A4-49F4-44CA-B6AC-B7175D4BEE96}
+	EndGlobalSection
+EndGlobal

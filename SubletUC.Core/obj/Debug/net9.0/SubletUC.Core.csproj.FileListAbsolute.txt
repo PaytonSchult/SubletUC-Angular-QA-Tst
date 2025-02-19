@@ -1,0 +1,12 @@
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\bin\Debug\net9.0\SubletUC.Core.deps.json
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\bin\Debug\net9.0\SubletUC.Core.dll
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\bin\Debug\net9.0\SubletUC.Core.pdb
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.csproj.AssemblyReference.cache
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.AssemblyInfoInputs.cache
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.AssemblyInfo.cs
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.csproj.CoreCompileInputs.cache
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.dll
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\refint\SubletUC.Core.dll
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.pdb
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\ref\SubletUC.Core.dll
