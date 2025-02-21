@@ -1,13 +1,13 @@
-2025-02-19T15:30:17.2582687-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
-2025-02-19T15:30:17.3055225-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
-2025-02-19T15:30:18.7007784-05:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:06.5139057-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T22:07:06.5697880-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T22:07:08.1282974-05:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT 1" (0723d8ff)
-2025-02-19T15:30:18.7080083-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
-2025-02-19T15:30:18.7278165-05:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.1356030-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
+2025-02-20T22:07:08.1568781-05:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""DECLARE @result int;
 EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
 SELECT @result" (0723d8ff)
-2025-02-19T15:30:18.7637016-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.1960027-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
 BEGIN
     CREATE TABLE [__EFMigrationsHistory] (
@@ -16,54 +16,55 @@ BEGIN
         CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
     );
 END;" (0723d8ff)
-2025-02-19T15:30:18.7737071-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.2067553-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT 1" (0723d8ff)
-2025-02-19T15:30:18.7744937-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.2075723-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
-2025-02-19T15:30:18.7783373-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.2111684-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT [MigrationId], [ProductVersion]
 FROM [__EFMigrationsHistory]
 ORDER BY [MigrationId];" (0723d8ff)
-2025-02-19T15:30:18.7866969-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
-2025-02-19T15:30:18.7925111-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.2192769-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-20T22:07:08.2255439-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""DECLARE @result int;
 EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
 SELECT @result" (0723d8ff)
-2025-02-19T15:30:18.9211376-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.3567927-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT CASE
     WHEN EXISTS (
         SELECT 1
         FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
     ELSE CAST(0 AS bit)
 END" (0723d8ff)
-2025-02-19T15:30:18.9266957-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.3628134-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT CASE
     WHEN EXISTS (
         SELECT 1
         FROM [AppCustomers] AS [a]) THEN CAST(1 AS bit)
     ELSE CAST(0 AS bit)
 END" (0723d8ff)
-2025-02-19T15:30:18.9933940-05:00  [INF] Executed DbCommand ("8"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.4300983-05:00  [INF] Executed DbCommand ("8"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
 ""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
 FROM [OpenIddictApplications] AS [o]
 WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
-2025-02-19T15:30:19.0433761-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:07:08.4823996-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
 ""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
 FROM [OpenIddictApplications] AS [o]
 WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
-2025-02-19T15:30:19.0946374-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
-2025-02-19T15:30:19.0947967-05:00  [INF] Quartz Scheduler created (389d80b0)
-2025-02-19T15:30:19.0949677-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
-2025-02-19T15:30:19.0950992-05:00  [INF] RAMJobStore initialized. (8c5a21db)
-2025-02-19T15:30:19.0952872-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
-2025-02-19T15:30:19.0953723-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
-2025-02-19T15:30:19.0954740-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
-2025-02-19T15:30:19.1705669-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
-2025-02-19T15:30:19.1709946-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
-2025-02-19T15:30:19.1711491-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
-2025-02-19T15:30:19.1711736-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
-2025-02-19T15:30:19.1728887-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
-2025-02-19T15:34:19.1099572-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T22:07:08.5354331-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2025-02-20T22:07:08.5355666-05:00  [INF] Quartz Scheduler created (389d80b0)
+2025-02-20T22:07:08.5357461-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2025-02-20T22:07:08.5359036-05:00  [INF] RAMJobStore initialized. (8c5a21db)
+2025-02-20T22:07:08.5360820-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
+2025-02-20T22:07:08.5361571-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2025-02-20T22:07:08.5362573-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2025-02-20T22:07:08.6129193-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2025-02-20T22:07:08.6133197-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-20T22:07:08.6134579-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-02-20T22:07:08.6134798-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
+2025-02-20T22:07:08.6150601-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2025-02-20T22:09:15.0137645-05:00  [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2025-02-20T22:12:08.5492020-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -103,7 +104,7 @@ Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTrigger
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T15:34:19.1169172-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T22:12:08.5564235-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -143,7 +144,7 @@ Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTrigger
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T15:34:19.1230819-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T22:12:08.5616191-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = False, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -183,20 +184,20 @@ Parameters: refire = False, unscheduleFiringTrigger = False, unscheduleAllTrigge
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T16:16:48.1832196-05:00  [INF] Application is shutting down... (90f52c38)
-2025-02-19T16:16:48.1884524-05:00  [INF] Scheduler "QuartzScheduler_$_NON_CLUSTERED" shutting down. (cff05048)
-2025-02-19T16:16:48.1888656-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused. (4b94edca)
-2025-02-19T16:16:48.1910298-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete. (0c25828c)
-2025-02-19T16:16:53.3748208-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
-2025-02-19T16:16:53.4172564-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
-2025-02-19T16:16:54.6801812-05:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:14:20.7988008-05:00  [INF] Application is shutting down... (90f52c38)
+2025-02-20T22:14:20.8041585-05:00  [INF] Scheduler "QuartzScheduler_$_NON_CLUSTERED" shutting down. (cff05048)
+2025-02-20T22:14:20.8045503-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused. (4b94edca)
+2025-02-20T22:14:20.8071894-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete. (0c25828c)
+2025-02-20T22:20:45.6847371-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T22:20:45.7343341-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T22:20:47.0482314-05:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT 1" (0723d8ff)
-2025-02-19T16:16:54.6874337-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
-2025-02-19T16:16:54.7064330-05:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.0552144-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
+2025-02-20T22:20:47.0744292-05:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""DECLARE @result int;
 EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
 SELECT @result" (0723d8ff)
-2025-02-19T16:16:54.7441941-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.1088848-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
 BEGIN
     CREATE TABLE [__EFMigrationsHistory] (
@@ -205,54 +206,55 @@ BEGIN
         CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
     );
 END;" (0723d8ff)
-2025-02-19T16:16:54.7534892-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.1187025-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT 1" (0723d8ff)
-2025-02-19T16:16:54.7542650-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.1194172-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
-2025-02-19T16:16:54.7574964-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.1227492-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT [MigrationId], [ProductVersion]
 FROM [__EFMigrationsHistory]
 ORDER BY [MigrationId];" (0723d8ff)
-2025-02-19T16:16:54.7648086-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
-2025-02-19T16:16:54.7708293-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.1300859-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-20T22:20:47.1361587-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""DECLARE @result int;
 EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
 SELECT @result" (0723d8ff)
-2025-02-19T16:16:54.8895163-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.2563088-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT CASE
     WHEN EXISTS (
         SELECT 1
         FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
     ELSE CAST(0 AS bit)
 END" (0723d8ff)
-2025-02-19T16:16:54.8952398-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.2616947-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT CASE
     WHEN EXISTS (
         SELECT 1
         FROM [AppCustomers] AS [a]) THEN CAST(1 AS bit)
     ELSE CAST(0 AS bit)
 END" (0723d8ff)
-2025-02-19T16:16:54.9600866-05:00  [INF] Executed DbCommand ("9"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.3251131-05:00  [INF] Executed DbCommand ("8"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
 ""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
 FROM [OpenIddictApplications] AS [o]
 WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
-2025-02-19T16:16:55.0087044-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:20:47.3742610-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
 ""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
 FROM [OpenIddictApplications] AS [o]
 WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
-2025-02-19T16:16:55.0442586-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
-2025-02-19T16:16:55.0444030-05:00  [INF] Quartz Scheduler created (389d80b0)
-2025-02-19T16:16:55.0445958-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
-2025-02-19T16:16:55.0447173-05:00  [INF] RAMJobStore initialized. (8c5a21db)
-2025-02-19T16:16:55.0448852-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
-2025-02-19T16:16:55.0449848-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
-2025-02-19T16:16:55.0451409-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
-2025-02-19T16:16:55.1105310-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
-2025-02-19T16:16:55.1108800-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
-2025-02-19T16:16:55.1110122-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
-2025-02-19T16:16:55.1110342-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
-2025-02-19T16:16:55.1127302-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
-2025-02-19T16:25:55.0568110-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T22:20:47.4239321-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2025-02-20T22:20:47.4240702-05:00  [INF] Quartz Scheduler created (389d80b0)
+2025-02-20T22:20:47.4242425-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2025-02-20T22:20:47.4243805-05:00  [INF] RAMJobStore initialized. (8c5a21db)
+2025-02-20T22:20:47.4245654-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
+2025-02-20T22:20:47.4246478-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2025-02-20T22:20:47.4247581-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2025-02-20T22:20:47.4904253-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2025-02-20T22:20:47.4907465-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-20T22:20:47.4908788-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-02-20T22:20:47.4908999-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
+2025-02-20T22:20:47.4923770-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2025-02-20T22:20:55.1023497-05:00 0HNAI4QV2D1OB:00000002 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2025-02-20T22:27:47.4370928-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -292,7 +294,7 @@ Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTrigger
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T16:25:55.0756829-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T22:27:47.4438806-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -332,7 +334,7 @@ Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTrigger
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T16:25:55.0810192-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T22:27:47.4488419-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = False, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -372,20 +374,20 @@ Parameters: refire = False, unscheduleFiringTrigger = False, unscheduleAllTrigge
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T16:59:48.8515223-05:00  [INF] Application is shutting down... (90f52c38)
-2025-02-19T16:59:48.8565287-05:00  [INF] Scheduler "QuartzScheduler_$_NON_CLUSTERED" shutting down. (cff05048)
-2025-02-19T16:59:48.8570265-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused. (4b94edca)
-2025-02-19T16:59:48.8593323-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete. (0c25828c)
-2025-02-19T16:59:52.7841489-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
-2025-02-19T16:59:52.8290412-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
-2025-02-19T16:59:54.1806692-05:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:27.4245464-05:00  [INF] Application is shutting down... (90f52c38)
+2025-02-20T22:30:27.4293448-05:00  [INF] Scheduler "QuartzScheduler_$_NON_CLUSTERED" shutting down. (cff05048)
+2025-02-20T22:30:27.4297507-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused. (4b94edca)
+2025-02-20T22:30:27.4330104-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete. (0c25828c)
+2025-02-20T22:30:29.9254724-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T22:30:29.9737165-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T22:30:30.6562084-05:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT 1" (0723d8ff)
-2025-02-19T16:59:54.1880466-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
-2025-02-19T16:59:54.2078502-05:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.6633572-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
+2025-02-20T22:30:30.6786073-05:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""DECLARE @result int;
 EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
 SELECT @result" (0723d8ff)
-2025-02-19T16:59:54.2430584-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.7134285-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
 BEGIN
     CREATE TABLE [__EFMigrationsHistory] (
@@ -394,54 +396,54 @@ BEGIN
         CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
     );
 END;" (0723d8ff)
-2025-02-19T16:59:54.2536081-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.7225733-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT 1" (0723d8ff)
-2025-02-19T16:59:54.2543228-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.7232578-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
-2025-02-19T16:59:54.2577541-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.7264721-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT [MigrationId], [ProductVersion]
 FROM [__EFMigrationsHistory]
 ORDER BY [MigrationId];" (0723d8ff)
-2025-02-19T16:59:54.2660383-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
-2025-02-19T16:59:54.2728520-05:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.7335650-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-20T22:30:30.7382181-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""DECLARE @result int;
 EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
 SELECT @result" (0723d8ff)
-2025-02-19T16:59:54.3956362-05:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.8559091-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT CASE
     WHEN EXISTS (
         SELECT 1
         FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
     ELSE CAST(0 AS bit)
 END" (0723d8ff)
-2025-02-19T16:59:54.4015771-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.8616524-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT CASE
     WHEN EXISTS (
         SELECT 1
         FROM [AppCustomers] AS [a]) THEN CAST(1 AS bit)
     ELSE CAST(0 AS bit)
 END" (0723d8ff)
-2025-02-19T16:59:54.4672763-05:00  [INF] Executed DbCommand ("9"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.9241391-05:00  [INF] Executed DbCommand ("7"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
 ""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
 FROM [OpenIddictApplications] AS [o]
 WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
-2025-02-19T16:59:54.5172671-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+2025-02-20T22:30:30.9708892-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
 ""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
 FROM [OpenIddictApplications] AS [o]
 WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
-2025-02-19T16:59:54.5532295-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
-2025-02-19T16:59:54.5533859-05:00  [INF] Quartz Scheduler created (389d80b0)
-2025-02-19T16:59:54.5535659-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
-2025-02-19T16:59:54.5536883-05:00  [INF] RAMJobStore initialized. (8c5a21db)
-2025-02-19T16:59:54.5538617-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
-2025-02-19T16:59:54.5539442-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
-2025-02-19T16:59:54.5540530-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
-2025-02-19T16:59:54.6207942-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
-2025-02-19T16:59:54.6211335-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
-2025-02-19T16:59:54.6212784-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
-2025-02-19T16:59:54.6213013-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
-2025-02-19T16:59:54.6229041-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
-2025-02-19T17:02:54.5740244-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T22:30:31.0057257-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2025-02-20T22:30:31.0058725-05:00  [INF] Quartz Scheduler created (389d80b0)
+2025-02-20T22:30:31.0060398-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2025-02-20T22:30:31.0061648-05:00  [INF] RAMJobStore initialized. (8c5a21db)
+2025-02-20T22:30:31.0063259-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
+2025-02-20T22:30:31.0064138-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2025-02-20T22:30:31.0065175-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2025-02-20T22:30:31.0715830-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2025-02-20T22:30:31.0718875-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-20T22:30:31.0720136-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-02-20T22:30:31.0720322-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
+2025-02-20T22:30:31.0735015-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2025-02-20T22:33:31.0168470-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -481,7 +483,7 @@ Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTrigger
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T17:02:54.5823521-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T22:33:31.0232376-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -521,7 +523,7 @@ Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTrigger
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T17:02:54.5878124-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T22:33:31.0273592-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = False, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -561,7 +563,287 @@ Parameters: refire = False, unscheduleFiringTrigger = False, unscheduleAllTrigge
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T18:02:54.5525023-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T23:05:09.3862246-05:00  [INF] Application is shutting down... (90f52c38)
+2025-02-20T23:05:09.3907654-05:00  [INF] Scheduler "QuartzScheduler_$_NON_CLUSTERED" shutting down. (cff05048)
+2025-02-20T23:05:09.3912120-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused. (4b94edca)
+2025-02-20T23:05:09.3938066-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete. (0c25828c)
+2025-02-20T23:05:12.7935252-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T23:05:12.8454765-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T23:05:14.2797277-05:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-02-20T23:05:14.2885236-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
+2025-02-20T23:05:14.3084636-05:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result" (0723d8ff)
+2025-02-20T23:05:14.3454829-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;" (0723d8ff)
+2025-02-20T23:05:14.3576181-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-02-20T23:05:14.3584187-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-02-20T23:05:14.3619164-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-02-20T23:05:14.3697381-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-20T23:05:14.3763014-05:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result" (0723d8ff)
+2025-02-20T23:05:14.5097226-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-02-20T23:05:14.5161282-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-02-20T23:05:14.5857750-05:00  [INF] Executed DbCommand ("8"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-02-20T23:05:14.6421207-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-02-20T23:05:14.6800424-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2025-02-20T23:05:14.6801966-05:00  [INF] Quartz Scheduler created (389d80b0)
+2025-02-20T23:05:14.6803736-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2025-02-20T23:05:14.6805059-05:00  [INF] RAMJobStore initialized. (8c5a21db)
+2025-02-20T23:05:14.6806820-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
+2025-02-20T23:05:14.6807604-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2025-02-20T23:05:14.6808764-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2025-02-20T23:05:14.7518574-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2025-02-20T23:05:14.7519835-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-20T23:05:14.7521139-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-02-20T23:05:14.7521435-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
+2025-02-20T23:05:14.7536131-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2025-02-20T23:10:05.3935595-05:00  [INF] Application is shutting down... (90f52c38)
+2025-02-20T23:10:05.3986306-05:00  [INF] Scheduler "QuartzScheduler_$_NON_CLUSTERED" shutting down. (cff05048)
+2025-02-20T23:10:05.3990747-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused. (4b94edca)
+2025-02-20T23:10:05.4012289-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete. (0c25828c)
+2025-02-20T23:25:09.1431671-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T23:25:09.1921680-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T23:25:10.5208663-05:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-02-20T23:25:10.5277506-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
+2025-02-20T23:25:10.5479538-05:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result" (0723d8ff)
+2025-02-20T23:25:10.5830597-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;" (0723d8ff)
+2025-02-20T23:25:10.5938468-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-02-20T23:25:10.5948161-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-02-20T23:25:10.5986410-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-02-20T23:25:10.6060301-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-20T23:25:10.6119913-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result" (0723d8ff)
+2025-02-20T23:25:10.7318058-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-02-20T23:25:10.7374104-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-02-20T23:25:10.8020844-05:00  [INF] Executed DbCommand ("8"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-02-20T23:25:10.8531320-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-02-20T23:25:10.8888056-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2025-02-20T23:25:10.8889555-05:00  [INF] Quartz Scheduler created (389d80b0)
+2025-02-20T23:25:10.8891393-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2025-02-20T23:25:10.8892754-05:00  [INF] RAMJobStore initialized. (8c5a21db)
+2025-02-20T23:25:10.8894461-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
+2025-02-20T23:25:10.8895445-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2025-02-20T23:25:10.8896680-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2025-02-20T23:25:10.9545519-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2025-02-20T23:25:10.9549215-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-20T23:25:10.9550456-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-02-20T23:25:10.9550679-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
+2025-02-20T23:25:10.9565843-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2025-02-20T23:26:00.6610314-05:00  [ERR] There was an error trying to launch the SPA proxy. (b073566d)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.StartSpaProcessAndProbeForLiveness(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.<StartInBackground>g__UpdateStatus|7_0(Task launchTask)
+2025-02-20T23:26:00.7141638-05:00  [INF] Application is shutting down... (90f52c38)
+2025-02-20T23:26:00.7189653-05:00  [INF] Scheduler "QuartzScheduler_$_NON_CLUSTERED" shutting down. (cff05048)
+2025-02-20T23:26:00.7193636-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused. (4b94edca)
+2025-02-20T23:26:00.7214309-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete. (0c25828c)
+2025-02-20T23:26:03.7433250-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T23:26:03.7906314-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T23:26:04.4621808-05:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-02-20T23:26:04.4702134-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
+2025-02-20T23:26:04.4861515-05:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result" (0723d8ff)
+2025-02-20T23:26:04.5219215-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;" (0723d8ff)
+2025-02-20T23:26:04.5335362-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-02-20T23:26:04.5343331-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-02-20T23:26:04.5377428-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-02-20T23:26:04.5462478-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-20T23:26:04.5544790-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result" (0723d8ff)
+2025-02-20T23:26:04.6849257-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-02-20T23:26:04.6904441-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-02-20T23:26:04.7551083-05:00  [INF] Executed DbCommand ("7"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-02-20T23:26:04.8026437-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-02-20T23:26:04.8364935-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2025-02-20T23:26:04.8366246-05:00  [INF] Quartz Scheduler created (389d80b0)
+2025-02-20T23:26:04.8367995-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2025-02-20T23:26:04.8369216-05:00  [INF] RAMJobStore initialized. (8c5a21db)
+2025-02-20T23:26:04.8370811-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
+2025-02-20T23:26:04.8371578-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2025-02-20T23:26:04.8372614-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2025-02-20T23:26:04.9014199-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2025-02-20T23:26:04.9018744-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-20T23:26:04.9020287-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-02-20T23:26:04.9020481-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
+2025-02-20T23:26:04.9036145-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2025-02-20T23:27:09.6598500-05:00  [INF] Application is shutting down... (90f52c38)
+2025-02-20T23:27:09.6645269-05:00  [INF] Scheduler "QuartzScheduler_$_NON_CLUSTERED" shutting down. (cff05048)
+2025-02-20T23:27:09.6648855-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused. (4b94edca)
+2025-02-20T23:27:09.6667990-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete. (0c25828c)
+2025-02-20T23:27:12.2090482-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T23:27:12.2547488-05:00  [WRN] The WebRootPath was not found: "C:\local Source\SubletUC\SubletUC\SubletUC.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2025-02-20T23:27:12.9130059-05:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-02-20T23:27:12.9199107-05:00  [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. (a4825afd)
+2025-02-20T23:27:12.9345802-05:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result" (0723d8ff)
+2025-02-20T23:27:12.9682804-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;" (0723d8ff)
+2025-02-20T23:27:12.9777310-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-02-20T23:27:12.9784431-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-02-20T23:27:12.9815083-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-02-20T23:27:12.9889412-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2025-02-20T23:27:12.9937889-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result" (0723d8ff)
+2025-02-20T23:27:13.1083605-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-02-20T23:27:13.1134202-05:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-02-20T23:27:13.1743580-05:00  [INF] Executed DbCommand ("7"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-02-20T23:27:13.2210387-05:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2025-02-20T23:27:13.2548411-05:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2025-02-20T23:27:13.2549724-05:00  [INF] Quartz Scheduler created (389d80b0)
+2025-02-20T23:27:13.2551466-05:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2025-02-20T23:27:13.2552635-05:00  [INF] RAMJobStore initialized. (8c5a21db)
+2025-02-20T23:27:13.2555703-05:00  [INF] Quartz Scheduler 3.13.1.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (70e8852b)
+2025-02-20T23:27:13.2556823-05:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2025-02-20T23:27:13.2558924-05:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2025-02-20T23:27:13.3185341-05:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2025-02-20T23:27:13.3189183-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-02-20T23:27:13.3190342-05:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-02-20T23:27:13.3190569-05:00  [INF] Content root path: "C:\local Source\SubletUC\SubletUC\SubletUC.Server" (cc26f24e)
+2025-02-20T23:27:13.3205364-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2025-02-20T23:28:13.2726577-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -601,7 +883,7 @@ Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTrigger
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T18:02:54.5540244-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T23:28:13.2788859-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -641,7 +923,7 @@ Parameters: refire = True, unscheduleFiringTrigger = False, unscheduleAllTrigger
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T18:02:54.5554818-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
+2025-02-20T23:28:13.2834224-05:00  [ERR] Job OpenIddict/Quartz.NET integration.OpenIddict job threw a JobExecutionException:  (f1c848c9)
 Parameters: refire = False, unscheduleFiringTrigger = False, unscheduleAllTriggers = False 
  Quartz.JobExecutionException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
  ---> System.AggregateException: One or more errors occurred. (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.) (Method not found: 'System.Threading.Tasks.Task`1<Int32> Microsoft.EntityFrameworkCore.RelationalQueryableExtensions.ExecuteDeleteAsync(System.Linq.IQueryable`1<!!0>, System.Threading.CancellationToken)'.)
@@ -681,7 +963,3 @@ Parameters: refire = False, unscheduleFiringTrigger = False, unscheduleAllTrigge
    at OpenIddict.Core.OpenIddictAuthorizationManager`1.OpenIddict.Abstractions.IOpenIddictAuthorizationManager.PruneAsync(DateTimeOffset threshold, CancellationToken cancellationToken)
    at OpenIddict.Quartz.OpenIddictQuartzJob.Execute(IJobExecutionContext context)<---
 ]
-2025-02-19T18:09:50.7866956-05:00  [INF] Application is shutting down... (90f52c38)
-2025-02-19T18:09:50.7920130-05:00  [INF] Scheduler "QuartzScheduler_$_NON_CLUSTERED" shutting down. (cff05048)
-2025-02-19T18:09:50.7924883-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED paused. (4b94edca)
-2025-02-19T18:09:50.7954057-05:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED Shutdown complete. (0c25828c)

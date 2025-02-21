@@ -39,6 +39,7 @@
     <PackageJsonDependenciesChartJs Condition="$(PackageJsonDependenciesChartJs) == ''">^4.4.6</PackageJsonDependenciesChartJs>
     <PackageJsonDependenciesDayjs Condition="$(PackageJsonDependenciesDayjs) == ''">^1.11.13</PackageJsonDependenciesDayjs>
     <PackageJsonDependenciesFontAwesome Condition="$(PackageJsonDependenciesFontAwesome) == ''">^4.7.0</PackageJsonDependenciesFontAwesome>
+    <PackageJsonDependenciesFontawesome Condition="$(PackageJsonDependenciesFontawesome) == ''">^5.6.3</PackageJsonDependenciesFontawesome>
     <PackageJsonDependenciesJestEditorSupport Condition="$(PackageJsonDependenciesJestEditorSupport) == ''">*</PackageJsonDependenciesJestEditorSupport>
     <PackageJsonDependenciesNg2Charts Condition="$(PackageJsonDependenciesNg2Charts) == ''">^7.0.0</PackageJsonDependenciesNg2Charts>
     <PackageJsonDependenciesNgxToasta Condition="$(PackageJsonDependenciesNgxToasta) == ''">^4.0.0</PackageJsonDependenciesNgxToasta>

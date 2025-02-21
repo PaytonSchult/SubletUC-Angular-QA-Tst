@@ -10,3 +10,4 @@ C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.d
 C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\refint\SubletUC.Core.dll
 C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.pdb
 C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\ref\SubletUC.Core.dll
+C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.sourcelink.json

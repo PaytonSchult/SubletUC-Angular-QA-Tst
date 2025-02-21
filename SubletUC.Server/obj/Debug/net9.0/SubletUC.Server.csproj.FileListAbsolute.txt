@@ -217,3 +217,4 @@ C:\local Source\SubletUC\SubletUC\SubletUC.Server\obj\Debug\net9.0\refint\Sublet
 C:\local Source\SubletUC\SubletUC\SubletUC.Server\obj\Debug\net9.0\SubletUC.Server.pdb
 C:\local Source\SubletUC\SubletUC\SubletUC.Server\obj\Debug\net9.0\SubletUC.Server.genruntimeconfig.cache
 C:\local Source\SubletUC\SubletUC\SubletUC.Server\obj\Debug\net9.0\ref\SubletUC.Server.dll
+C:\local Source\SubletUC\SubletUC\SubletUC.Server\obj\Debug\net9.0\SubletUC.Server.sourcelink.json
