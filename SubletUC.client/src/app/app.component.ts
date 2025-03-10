@@ -12,7 +12,6 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HomeModule } from './modules/home/home.module';
-import { HomeComponent } from "./modules/home/home/home.component";
 
 
 @Component({
@@ -21,8 +20,7 @@ import { HomeComponent } from "./modules/home/home/home.component";
     styleUrl: './app.component.scss',
     imports: [
     ToastaModule, NgbCollapseModule,
-    RouterOutlet, TranslateModule, NavbarComponent, FooterComponent, HomeModule,
-    HomeComponent
+    RouterOutlet, TranslateModule, NavbarComponent, FooterComponent, HomeModule
 ]
 })
 export class AppComponent implements OnInit {
