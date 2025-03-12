@@ -4,10 +4,10 @@
 // (c) 2024 www.ebenmonney.com/mit-license
 // ---------------------------------------
 
-namespace SubletUC.Core.Infrastructure
-{
-    public interface IDatabaseSeeder
-    {
-        Task SeedAsync();
-    }
-}
+// namespace SubletUC.Core.Infrastructure
+// {
+//     public interface IDatabaseSeeder
+//     {
+//         Task SeedAsync();
+//     }
+// }
