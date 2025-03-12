@@ -13,7 +13,7 @@ using Microsoft.IdentityModel.Logging;
 using Microsoft.OpenApi.Models;
 using OpenIddict.Validation.AspNetCore;
 using Quartz;
-using SubletUC.Core.Infrastructure;
+using SubletUC.Core.Models;
 using SubletUC.Core.Models.Account;
 using SubletUC.Core.Services;
 using SubletUC.Core.Services.Account;
@@ -21,6 +21,7 @@ using SubletUC.Core.Services.Shop;
 using SubletUC.Server.Authorization;
 using SubletUC.Server.Authorization.Requirements;
 using SubletUC.Server.Configuration;
+using SubletUC.Server.Models;
 using SubletUC.Server.Services;
 using SubletUC.Server.Services.Email;
 using static OpenIddict.Abstractions.OpenIddictConstants;
@@ -34,7 +35,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 var migrationsAssembly = typeof(Program).GetTypeInfo().Assembly.GetName().Name;
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<SubletUCContext>(options =>
 {
     options.UseSqlServer(connectionString, b => b.MigrationsAssembly(migrationsAssembly));
     options.UseOpenIddict();
@@ -42,7 +43,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Add Identity
 builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddEntityFrameworkStores<SubletUCContext>()
     .AddDefaultTokenProviders();
 
 // Configure Identity options and password complexity here
@@ -85,7 +86,7 @@ builder.Services.AddOpenIddict()
     .AddCore(options =>
     {
         options.UseEntityFrameworkCore()
-               .UseDbContext<ApplicationDbContext>();
+               .UseDbContext<SubletUCContext>();
 
         options.UseQuartz();
     })
@@ -207,7 +208,7 @@ builder.Services.AddSingleton<IAuthorizationHandler, ViewRoleAuthorizationHandle
 builder.Services.AddSingleton<IAuthorizationHandler, AssignRolesAuthorizationHandler>();
 
 // DB Creation and Seeding
-builder.Services.AddTransient<IDatabaseSeeder, DatabaseSeeder>();
+//builder.Services.AddTransient<IDatabaseSeeder, DatabaseSeeder>();
 
 //File Logger
 builder.Logging.AddFile(builder.Configuration.GetSection("Logging"));
@@ -257,21 +258,21 @@ app.MapFallbackToFile("/index.html");
 
 /************* SEED DATABASE *************/
 
-using var scope = app.Services.CreateScope();
-try
-{
-    var dbSeeder = scope.ServiceProvider.GetRequiredService<IDatabaseSeeder>();
-    await dbSeeder.SeedAsync();
+// using var scope = app.Services.CreateScope();
+// try
+// {
+//     var dbSeeder = scope.ServiceProvider.GetRequiredService<IDatabaseSeeder>();
+//     await dbSeeder.SeedAsync();
 
-    await OidcServerConfig.RegisterClientApplicationsAsync(scope.ServiceProvider);
-}
-catch (Exception ex)
-{
-    var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
-    logger.LogCritical(ex, "An error occurred whilst creating/seeding database");
+//     await OidcServerConfig.RegisterClientApplicationsAsync(scope.ServiceProvider);
+// }
+// catch (Exception ex)
+// {
+//     var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+//     logger.LogCritical(ex, "An error occurred whilst creating/seeding database");
 
-    throw;
-}
+//     throw;
+// }
 
 /************* RUN APP *************/
 
