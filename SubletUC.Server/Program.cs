@@ -13,16 +13,10 @@ using Microsoft.IdentityModel.Logging;
 using Microsoft.OpenApi.Models;
 using OpenIddict.Validation.AspNetCore;
 using Quartz;
-using SubletUC.Core.Infrastructure;
+using SubletUC.Core.Models;
 using SubletUC.Core.Models.Account;
-using SubletUC.Core.Services;
-using SubletUC.Core.Services.Account;
-using SubletUC.Core.Services.Shop;
-using SubletUC.Server.Authorization;
-using SubletUC.Server.Authorization.Requirements;
-using SubletUC.Server.Configuration;
-using SubletUC.Server.Services;
-using SubletUC.Server.Services.Email;
+
+using SubletUC.Server.Models;
 using static OpenIddict.Abstractions.OpenIddictConstants;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -34,7 +28,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 var migrationsAssembly = typeof(Program).GetTypeInfo().Assembly.GetName().Name;
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<SubletUCContext>(options =>
 {
     options.UseSqlServer(connectionString, b => b.MigrationsAssembly(migrationsAssembly));
     options.UseOpenIddict();
@@ -42,7 +36,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Add Identity
 builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddEntityFrameworkStores<SubletUCContext>()
     .AddDefaultTokenProviders();
 
 // Configure Identity options and password complexity here
@@ -85,7 +79,7 @@ builder.Services.AddOpenIddict()
     .AddCore(options =>
     {
         options.UseEntityFrameworkCore()
-               .UseDbContext<ApplicationDbContext>();
+               .UseDbContext<SubletUCContext>();
 
         options.UseQuartz();
     })
@@ -145,20 +139,6 @@ builder.Services.AddAuthentication(o =>
     o.DefaultChallengeScheme = OpenIddictValidationAspNetCoreDefaults.AuthenticationScheme;
 });
 
-builder.Services.AddAuthorizationBuilder()
-    .AddPolicy(AuthPolicies.ViewAllUsersPolicy,
-        policy => policy.RequireClaim(CustomClaims.Permission, ApplicationPermissions.ViewUsers))
-    .AddPolicy(AuthPolicies.ManageAllUsersPolicy,
-        policy => policy.RequireClaim(CustomClaims.Permission, ApplicationPermissions.ManageUsers))
-    .AddPolicy(AuthPolicies.ViewAllRolesPolicy,
-        policy => policy.RequireClaim(CustomClaims.Permission, ApplicationPermissions.ViewRoles))
-    .AddPolicy(AuthPolicies.ViewRoleByRoleNamePolicy,
-        policy => policy.Requirements.Add(new ViewRoleAuthorizationRequirement()))
-    .AddPolicy(AuthPolicies.ManageAllRolesPolicy,
-        policy => policy.RequireClaim(CustomClaims.Permission, ApplicationPermissions.ManageRoles))
-    .AddPolicy(AuthPolicies.AssignAllowedRolesPolicy,
-        policy => policy.Requirements.Add(new AssignRolesAuthorizationRequirement()));
-
 // Add cors
 builder.Services.AddCors();
 
@@ -169,8 +149,6 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = OidcServerConfig.ServerName, Version = "v1" });
-    c.OperationFilter<SwaggerAuthorizeOperationFilter>();
     c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
     {
         Type = SecuritySchemeType.OAuth2,
@@ -187,33 +165,18 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddAutoMapper(typeof(Program));
 
 // Configurations
-builder.Services.Configure<AppSettings>(builder.Configuration);
+// builder.Services.Configure<AppSettings>(builder.Configuration);
 
-// Business Services
-builder.Services.AddScoped<IUserAccountService, UserAccountService>();
-builder.Services.AddScoped<IUserRoleService, UserRoleService>();
-builder.Services.AddScoped<ICustomerService, CustomerService>();
-builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IOrdersService, OrdersService>();
 
-// Other Services
-builder.Services.AddScoped<IEmailSender, EmailSender>();
-builder.Services.AddScoped<IUserIdAccessor, UserIdAccessor>();
-
-// Auth Handlers
-builder.Services.AddSingleton<IAuthorizationHandler, ViewUserAuthorizationHandler>();
-builder.Services.AddSingleton<IAuthorizationHandler, ManageUserAuthorizationHandler>();
-builder.Services.AddSingleton<IAuthorizationHandler, ViewRoleAuthorizationHandler>();
-builder.Services.AddSingleton<IAuthorizationHandler, AssignRolesAuthorizationHandler>();
 
 // DB Creation and Seeding
-builder.Services.AddTransient<IDatabaseSeeder, DatabaseSeeder>();
+//builder.Services.AddTransient<IDatabaseSeeder, DatabaseSeeder>();
 
 //File Logger
 builder.Logging.AddFile(builder.Configuration.GetSection("Logging"));
 
 //Email Templates
-EmailTemplates.Initialize(builder.Environment);
+//EmailTemplates.Initialize(builder.Environment);
 
 var app = builder.Build();
 
@@ -228,8 +191,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.DocumentTitle = "Swagger UI - SubletUC";
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", $"{OidcServerConfig.ServerName} V1");
-        c.OAuthClientId(OidcServerConfig.SwaggerClientID);
+        // c.SwaggerEndpoint("/swagger/v1/swagger.json", $"{OidcServerConfig.ServerName} V1");
+        // c.OAuthClientId(OidcServerConfig.SwaggerClientID);
     });
 
     IdentityModelEventSource.ShowPII = true;
@@ -254,24 +217,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.MapFallbackToFile("/index.html");
-
-/************* SEED DATABASE *************/
-
-using var scope = app.Services.CreateScope();
-try
-{
-    var dbSeeder = scope.ServiceProvider.GetRequiredService<IDatabaseSeeder>();
-    await dbSeeder.SeedAsync();
-
-    await OidcServerConfig.RegisterClientApplicationsAsync(scope.ServiceProvider);
-}
-catch (Exception ex)
-{
-    var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
-    logger.LogCritical(ex, "An error occurred whilst creating/seeding database");
-
-    throw;
-}
 
 /************* RUN APP *************/
 

@@ -1,1 +1,2 @@
 C:\local Source\SubletUC\SubletUC\SubletUC.client\obj\Debug\SubletUC.client.esproj.CoreCompileInputs.cache
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.client\obj\Debug\SubletUC.client.esproj.CoreCompileInputs.cache

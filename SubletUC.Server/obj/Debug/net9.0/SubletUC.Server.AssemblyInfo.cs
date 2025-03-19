@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2024 www.ebenmonney.com")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("ASPNET Core 9.0 - Angular 19 startup template for Quick Application Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("9.19.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("9.19.0+b068c0c2ac1a10b970a2c17ad3cf9bf0a2f61e3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("9.19.0+1face4f1689b9f94c8f86fa3fadfe96546d3be30")]
 [assembly: System.Reflection.AssemblyProductAttribute("SubletUC.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SubletUC.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("9.19.0.0")]

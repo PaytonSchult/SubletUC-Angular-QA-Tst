@@ -12,7 +12,7 @@
           "FluentValidation.AspNetCore": "11.3.0",
           "MailKit": "4.8.0",
           "Microsoft.AspNetCore.JsonPatch": "9.0.0",
-          "Microsoft.AspNetCore.SpaProxy": "9.0.2",
+          "Microsoft.AspNetCore.SpaProxy": "9.0.3",
           "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
@@ -164,11 +164,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SpaProxy/9.0.2": {
+      "Microsoft.AspNetCore.SpaProxy/9.0.3": {
         "runtime": {
           "lib/net9.0/Microsoft.AspNetCore.SpaProxy.dll": {
-            "assemblyVersion": "9.0.2.0",
-            "fileVersion": "9.0.225.6704"
+            "assemblyVersion": "9.0.3.0",
+            "fileVersion": "9.0.325.11220"
           }
         }
       },
@@ -1890,11 +1890,14 @@
       },
       "SubletUC.Core/9.19.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.0"
         },
         "runtime": {
           "SubletUC.Core.dll": {
-            "assemblyVersion": "9.19.0",
+            "assemblyVersion": "9.19.0.0",
             "fileVersion": "9.19.0.0"
           }
         }
@@ -1998,12 +2001,12 @@
       "path": "microsoft.aspnetcore.jsonpatch/9.0.0",
       "hashPath": "microsoft.aspnetcore.jsonpatch.9.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.SpaProxy/9.0.2": {
+    "Microsoft.AspNetCore.SpaProxy/9.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sbHIOFocnF9FGzJ5eg9HyiH/poRo3qiRgFCb07zRpT69/CFDMFuFiXVNS3eGlJt98FDI6PLMmd2D+xClHEFmZw==",
-      "path": "microsoft.aspnetcore.spaproxy/9.0.2",
-      "hashPath": "microsoft.aspnetcore.spaproxy.9.0.2.nupkg.sha512"
+      "sha512": "sha512-iErynM2aBLYMprxUv8HB+9zFWzXQN7ETSKEEaPN75Xmig7lcYT/97NULu3jI0uDV8jIrvGrS047AMCbB9iPW2A==",
+      "path": "microsoft.aspnetcore.spaproxy/9.0.3",
+      "hashPath": "microsoft.aspnetcore.spaproxy.9.0.3.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
       "type": "package",

@@ -11,3 +11,18 @@ C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\refint\SubletUC
 C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.pdb
 C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\ref\SubletUC.Core.dll
 C:\local Source\SubletUC\SubletUC\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.sourcelink.json
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.csproj.AssemblyReference.cache
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.AssemblyInfoInputs.cache
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.AssemblyInfo.cs
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.csproj.CoreCompileInputs.cache
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.sourcelink.json
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.dll
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\refint\SubletUC.Core.dll
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.pdb
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\bin\Debug\net9.0\SubletUC.Core.deps.json
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\bin\Debug\net9.0\SubletUC.Core.runtimeconfig.json
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\bin\Debug\net9.0\SubletUC.Core.dll
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\bin\Debug\net9.0\SubletUC.Core.pdb
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\SubletUC.Core.genruntimeconfig.cache
+C:\Users\chtay\source\SubletUC-Angular-QA\SubletUC.Core\obj\Debug\net9.0\ref\SubletUC.Core.dll
