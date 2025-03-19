@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\local Source\\SubletUC\\SubletUC\\SubletUC.Core\\SubletUC.Core.csproj": {}
+    "C:\\Users\\chtay\\source\\SubletUC-Angular-QA\\SubletUC.Core\\SubletUC.Core.csproj": {}
   },
   "projects": {
-    "C:\\local Source\\SubletUC\\SubletUC\\SubletUC.Core\\SubletUC.Core.csproj": {
+    "C:\\Users\\chtay\\source\\SubletUC-Angular-QA\\SubletUC.Core\\SubletUC.Core.csproj": {
       "version": "9.19.0",
       "restore": {
-        "projectUniqueName": "C:\\local Source\\SubletUC\\SubletUC\\SubletUC.Core\\SubletUC.Core.csproj",
+        "projectUniqueName": "C:\\Users\\chtay\\source\\SubletUC-Angular-QA\\SubletUC.Core\\SubletUC.Core.csproj",
         "projectName": "SubletUC.Core",
-        "projectPath": "C:\\local Source\\SubletUC\\SubletUC\\SubletUC.Core\\SubletUC.Core.csproj",
+        "projectPath": "C:\\Users\\chtay\\source\\SubletUC-Angular-QA\\SubletUC.Core\\SubletUC.Core.csproj",
         "packagesPath": "C:\\Users\\chtay\\.nuget\\packages\\",
-        "outputPath": "C:\\local Source\\SubletUC\\SubletUC\\SubletUC.Core\\obj\\",
+        "outputPath": "C:\\Users\\chtay\\source\\SubletUC-Angular-QA\\SubletUC.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\chtay\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,15 +39,27 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[9.0.0, )"
             }
@@ -75,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

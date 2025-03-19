@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "ToUHXEh/3iXeCvshVPzFpG9QU2SOkAPmuBXTSSYWjfY=",
+  "Hash": "LvF/9qASSVcXyoqUnYRJkFbM1mfadbpeTuqjSaLoPcM=",
   "Source": "SubletUC.Server",
   "BasePath": "_content/SubletUC.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\local Source\\SubletUC\\SubletUC\\SubletUC.client\\SubletUC.client.esproj",
+      "Identity": "C:\\Users\\chtay\\source\\SubletUC-Angular-QA\\SubletUC.client\\SubletUC.client.esproj",
       "Version": 2,
       "Source": "SubletUC.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",

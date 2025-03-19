@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9mJpJP9kiBw=",
+  "dgSpecHash": "PGr1XYiUVno=",
   "success": true,
-  "projectFilePath": "C:\\local Source\\SubletUC\\SubletUC\\SubletUC.Server\\SubletUC.Server.csproj",
+  "projectFilePath": "C:\\Users\\chtay\\source\\SubletUC-Angular-QA\\SubletUC.Server\\SubletUC.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chtay\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\chtay\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -17,7 +17,7 @@
     "C:\\Users\\chtay\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.0\\microsoft.aspnetcore.cryptography.keyderivation.9.0.0.nupkg.sha512",
     "C:\\Users\\chtay\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\9.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.9.0.0.nupkg.sha512",
     "C:\\Users\\chtay\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\9.0.0\\microsoft.aspnetcore.jsonpatch.9.0.0.nupkg.sha512",
-    "C:\\Users\\chtay\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\9.0.2\\microsoft.aspnetcore.spaproxy.9.0.2.nupkg.sha512",
+    "C:\\Users\\chtay\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\9.0.3\\microsoft.aspnetcore.spaproxy.9.0.3.nupkg.sha512",
     "C:\\Users\\chtay\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\chtay\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
     "C:\\Users\\chtay\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
