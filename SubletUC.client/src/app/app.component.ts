@@ -5,7 +5,7 @@
 // ---------------------------------------
 
 import { Component, inject, Renderer2, OnInit } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import {  ToastaModule } from 'ngx-toasta';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
@@ -20,8 +20,10 @@ import { HomeModule } from './modules/home/home.module';
     styleUrl: './app.component.scss',
     imports: [
     ToastaModule, NgbCollapseModule,
-    RouterOutlet, TranslateModule, NavbarComponent, FooterComponent, HomeModule
-]
+    RouterOutlet, TranslateModule, NavbarComponent, FooterComponent, HomeModule,
+    RouterModule
+],
+
 })
 export class AppComponent implements OnInit {
   isAppLoaded = false;

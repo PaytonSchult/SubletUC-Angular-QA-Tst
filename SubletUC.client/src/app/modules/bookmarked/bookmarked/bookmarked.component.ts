@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-bookmarked',
-  imports: [],
   templateUrl: './bookmarked.component.html',
-  styleUrl: './bookmarked.component.scss'
+  styleUrl: './bookmarked.component.scss',
+  standalone: false,
 })
 export class BookmarkedComponent {
 

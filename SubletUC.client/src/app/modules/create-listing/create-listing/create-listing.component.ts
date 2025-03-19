@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-create-listing',
-  imports: [],
   templateUrl: './create-listing.component.html',
-  styleUrl: './create-listing.component.scss'
+  styleUrl: './create-listing.component.scss',
+  standalone: false
 })
 export class CreateListingComponent {
 
